@@ -1,0 +1,159 @@
+  
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+
+body {
+    background: url("https://s1.1zoom.me/big0/593/Holidays_Wine_Roses_Black_background_Bottle_540218_1280x853.jpg") no-repeat center;
+    background-size: cover;
+    
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
+ }
+
+header img {
+    width: 50px;
+    height: 50px;
+  }
+
+button {
+      cursor: pointer;
+      background: red;
+      border: transparent;
+      border-radius: 25px;
+      font-size: 1.5em;
+  }
+  
+.wine {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+  
+.start-quiz {
+    border: 1px transparent;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+
+
+.start-button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+
+
+  /* question answer form should default to display: none, gets displayed when user clicks "start quiz" */
+
+.questionAnswerForm {
+      display: none;
+      width: 50%;
+      height: 100%;
+      /* border: 2px solid blue; */
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
+      border: 1px transparent;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size: 16px;
+
+  }
+
+
+fieldset {
+    border: none;
+}
+
+
+.radioChoices {
+    width: auto;
+    padding-bottom: 30px;
+}
+
+
+.question-form input[type="radio"],
+.question-form input[type="radio"]+label {
+    display: inline-block;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+label {
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+label:hover{
+    border: 1px dotted rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+
+
+.correctImage img, .wrongImage img, .finalImage img {
+    width: 85%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+        padding-bottom: 5%;
+      }
+
+      .correctFeedback img, .wrongFeedback img, .resultsForm img {
+          max-height: 350px;
+      }
+
+      html {
+          font-size: 2.0em;
+          
+      }
+    }

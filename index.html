@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quiz App">
+    <title>Wine Quiz</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script 
+    
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header role="banner">  
+        <div class="questionTracker">
+            <p>QUESTION: #<span class="questionNumber">0</span> OF 5</p></div>
+        <div class="scoreTracker">
+            <p>SCORE: <span class="score">0</span></p></div>
+    </header>
+    <main role="main" id="quiz-body">
+    <div class="start-quiz">
+      <p>
+          <br><span class="wine">Wines of the World Quiz</span></p>
+      <p>TAKE THE QUIZ!</p>
+          <button type="button" class="start-button">START</button>
+    </div>
+    <div class="questionAnswerForm"></div>
+    </main>
+  </body>
+</html>
